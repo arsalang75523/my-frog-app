@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-app-url.com/?share=true" />
+  <meta property="og:image" content="https://your-domain.com/assets/frame-preview.png" />
+  <meta property="og:description" content="Check out this interactive Farcaster frame!" />
+
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>moxie mafia</title>
+
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farcaster Data Viewer</title>
+  <title>moxie mafia</title>
 
-  <!-- OpenGraph Meta Tags -->
-  <meta property="og:title" content="Farcaster Data Viewer" />
-  <meta property="og:description" content="View your Farcaster earnings, social stats, and FarScore in a rich, interactive frame!" />
-  <meta property="og:image" content="https://s7.gifyu.com/images/SXaZQ.png" />
-  <meta property="og:url" content="https://arsalang75523.github.io/my-frog-app/" />
+  <!-- Farcaster Frame Meta Tags -->
+  <meta property="fc:frame" content="vNext" />
+  <meta property="fc:frame:image" content="https://your-domain.com/assets/frame-preview.png" />
+  <meta property="fc:frame:post_url" content="https://your-app-url.com/api/handle-action" />
+  
+  <!-- Optional OpenGraph Meta Tags for Fallback -->
+  <meta property="og:title" content="Farcaster Frame" />
+  <meta property="og:description" content="Check out this interactive Farcaster frame!" />
+  <meta property="og:image" content="https://your-domain.com/assets/frame-preview.png" />
+  <meta property="og:url" content="https://your-app-url.com" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Farcaster Data Viewer" />
-  <meta name="twitter:description" content="View your Farcaster earnings, social stats, and FarScore in a rich, interactive frame!" />
-  <meta name="twitter:image" content="https://s7.gifyu.com/images/SXaZQ.png" />
+  <!-- Buttons (Optional) -->
+  <meta property="fc:frame:button:1" content="View Details" />
+  <meta property="fc:frame:button:1:action" content="post_redirect" />
+  <meta property="fc:frame:button:1:target" content="https://your-app-url.com/details" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://s7.gifyu.com/images/SXaZQ.png" />
+  <meta property="fc:frame:button:2" content="Share" />
+  <meta property="fc:frame:button:2:action" content="post" />
+  <meta property="fc:frame:button:2:post_url" content="https://your-app-url.com/api/share" />
 
   <!-- CSS Styles -->
   <style>
@@ -44,7 +61,6 @@
     }
     .content {
       margin-top: 20px;
-      text-align: center;
     }
     .footer {
       margin-top: 20px;
@@ -55,13 +71,20 @@
   </style>
 </head>
 <body>
+
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  
+
   <div class="container">
-    <h1 class="title">Farcaster Data Viewer</h1>
+    <h1 class="title">Farcaster Frame</h1>
     <div class="content">
-      <p>View your Farcaster earnings, social stats, and FarScore in a rich, interactive frame!</p>
-      <img src="https://s7.gifyu.com/images/SXaZQ.png" alt="Farcaster Preview" style="width: 100%; max-width: 600px; margin-top: 20px;" />
+      <p>Check out this interactive Farcaster frame!</p>
     </div>
     <div class="footer">cooked by @arsalang75523</div>
   </div>
 </body>
 </html>
+
+
