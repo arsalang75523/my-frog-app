@@ -1,90 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farcaster Frame by @arsalang75523</title>
 
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Cooked by @arsalang75523" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://my-frog-app-psi.vercel.app/?share=true" />
-  <meta property="fc:frame:image" content="https://my-frog-app-psi.vercel.app/assets/frame-preview.png" />
-  <meta property="og:description" content="Check out this interactive Farcaster frame!" />
-
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>moxie mafia</title>
-
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>moxie mafia</title>
+  <meta property="og:url" content="https://my-frog-app-psi.vercel.app/" />
+  <meta property="og:image" content="https://my-frog-app-psi.vercel.app/assets/frame-preview.png" />
+  <meta property="og:image:secure_url" content="https://my-frog-app-psi.vercel.app/assets/frame-preview.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Dynamic frame cooked by @arsalang75523" />
+  <meta property="og:description" content="Explore dynamic Farcaster frames cooked by @arsalang75523." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Cooked Frames by @arsalang75523" />
 
   <!-- Farcaster Frame Meta Tags -->
   <meta property="fc:frame" content="vNext" />
-  <meta property="fc:frame:image" content="https://your-domain.com/assets/frame-preview.png" />
-  <meta property="fc:frame:post_url" content="https://my-frog-app-psi.vercel.app/" />
-  
-  <!-- Optional OpenGraph Meta Tags for Fallback -->
-  <meta property="og:title" content="Farcaster Frame" />
-  <meta property="og:description" content="Check out this interactive Farcaster frame!" />
-  <meta property="og:image" content="https://my-frog-app-psi.vercel.app/assets/frame-preview.png" />
-  <meta property="og:url" content="https://my-frog-app-psi.vercel.app" />
-  <meta property="og:type" content="website" />
+  <meta property="fc:frame:image" content="https://my-frog-app-psi.vercel.app/assets/frame-preview.png" />
+  <meta property="fc:frame:post_url" content="https://my-frog-app-psi.vercel.app/api/handle-request" />
 
-  <!-- Buttons (Optional) -->
-  <meta property="fc:frame:button:1" content="View Details" />
-  <meta property="fc:frame:button:1:action" content="post_redirect" />
+  <!-- Buttons for Warpcast -->
+  <!-- Learn More Button -->
+  <meta property="fc:frame:button:1:type" content="post_redirect" />
+  <meta property="fc:frame:button:1:title" content="Learn More" />
   <meta property="fc:frame:button:1:target" content="https://my-frog-app-psi.vercel.app/details" />
 
-  <meta property="fc:frame:button:2" content="Share" />
-  <meta property="fc:frame:button:2:action" content="post" />
-  <meta property="fc:frame:button:2:post_url" content="https://my-frog-app-psi.vercel.app/api/share" />
+  <!-- Share Button -->
+  <meta property="fc:frame:button:2:type" content="post" />
+  <meta property="fc:frame:button:2:title" content="Share" />
+  <meta property="fc:frame:button:2:post_url" content="https://my-frog-app-psi.vercel.app/src/app" />
 
-  <!-- CSS Styles -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .title {
-      font-size: 24px;
-      text-align: center;
-      color: #4CAF50;
-    }
-    .content {
-      margin-top: 20px;
-    }
-    .footer {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 16px;
-      color: #888;
-    }
-  </style>
+  <!-- Check Button -->
+  <meta property="fc:frame:button:3:type" content="post_redirect" />
+  <meta property="fc:frame:button:3:title" content="Check" />
+  <meta property="fc:frame:button:3:target" content="https://my-frog-app-psi.vercel.app/check-status" />
+
+  <!-- Browser Redirect -->
+  <meta property="fc:frame:browserLocation" content="/" />
 </head>
 <body>
+  <div id="root">
+    <!-- Rendered content for web -->
+    <header style="background-color: #4CAF50; padding: 10px; color: white; text-align: center;">
+      <h1>Cooked by @arsalang75523</h1>
+    </header>
 
+    <main style="text-align: center; padding: 20px;">
+      <h2>Welcome to Farcaster Frame</h2>
+      <p>Explore dynamic interactions and analytics cooked by @arsalang75523.</p>
 
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  
+      <section>
+        <img src="https://my-frog-app-psi.vercel.app/assets/frame-preview.png" alt="Frame Preview by @arsalang75523" style="max-width: 100%; height: auto;" />
+      </section>
 
-  <div class="container">
-    <h1 class="title">Farcaster Frame</h1>
-    <div class="content">
-      <p>Check out this interactive Farcaster frame!</p>
-    </div>
-    <div class="footer">cooked by @arsalang75523</div>
+      <section style="margin-top: 20px;">
+        <h2>Actions</h2>
+        <div>
+          <!-- Learn More Button -->
+          <a href="https://my-frog-app-psi.vercel.app/details" style="text-decoration: none;">
+            <button style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+              Learn More
+            </button>
+          </a>
+
+          <!-- Share Button -->
+          <form action="https://my-frog-app-psi.vercel.app/src/app" method="POST" style="display: inline-block; margin: 0 10px;">
+            <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+              Share
+            </button>
+          </form>
+
+          <!-- Check Button -->
+          <a href="https://my-frog-app-psi.vercel.app/check-status" style="text-decoration: none;">
+            <button style="padding: 10px 20px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">
+              Check
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer style="background-color: #333; color: white; text-align: center; padding: 10px; margin-top: 20px;">
+      <p>&copy; 2025 Cooked by @arsalang75523. All rights reserved.</p>
+    </footer>
   </div>
+
+  <script>
+    // Detect if running inside Warpcast or a regular browser
+    if (!window.navigator.userAgent.includes("Warpcast")) {
+      console.log("Page loaded in a web browser.");
+    }
+  </script>
 </body>
 </html>
-
-
