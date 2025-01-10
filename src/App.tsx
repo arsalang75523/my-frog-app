@@ -271,7 +271,7 @@ const App = () => {
 
 const styles = {
   container: {
-    textAlign: 'center' as 'center',
+    textAlign: 'center' as const,
     fontFamily: 'Arial, sans-serif',
     padding: '20px',
   },
@@ -307,11 +307,11 @@ const styles = {
     boxShadow: '0 0 10px rgba(0,0,0,0.1)',
     width: '80%',
   },
-  table: { width: '100%', borderCollapse: 'collapse' as 'collapse' },
+  table: { width: '100%', borderCollapse: 'collapse' as const },
   tableCell: {
     border: '1px solid #ddd',
     padding: '8px',
-    textAlign: 'left' as 'left',
+    textAlign: 'left' as const,
   },
   spinnerContainer: {
     display: 'flex',

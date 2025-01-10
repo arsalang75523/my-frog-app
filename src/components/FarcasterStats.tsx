@@ -1,7 +1,7 @@
- import React, { useState, useEffect } from 'react';
-import { formatNumber } from '../utils/formatNumber';
+import { useState } from 'react';
 
-const AIRSTACK_API_KEY = '13827f8b8c521443da97ed54d4d6a891';
+
+
 
 const FarcasterStats = () => {
   const [fid, setFid] = useState('');
